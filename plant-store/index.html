@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Find your perfect houseplant with Blooming Oasis. Explore popular indoor plants, curated collections, and easy plant care guides." />
+  <title>Blooming Oasis | Find Your Perfect Plant</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <div class="bg-success text-white text-center py-2">
+      A little more green makes every day better
+      <span class="ms-2">| <span class="live-clock"></span></span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container-fluid px-lg-5">
+        <a class="navbar-brand fw-bold text-success" href="index.html">Blooming Oasis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Shop Monstera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-success btn-sm px-3" href="product.html">Explore plants <span
+                  class="cart-count">0</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="small text-success fw-semibold text-uppercase">
+              BRING HOME A LITTLE NATURE
+            </p>
+            <h1 class="display-4 fw-bold">
+              Make room for <span class="text-success">something green.</span>
+            </h1>
+            <p class="lead text-muted my-4">
+              Beautiful, beginner-friendly houseplants and simple advice to
+              help them thrive in your space.
+            </p>
+            <a href="#plant-matchmaker" class="btn btn-success btn-lg me-2">Find my plant</a>
+            <a href="product.html" class="btn btn-outline-success btn-lg">Shop Monstera</a>
+            <div class="small text-muted mt-4">
+              Fresh leaves. Calm spaces. Happier plant parents.
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-3 bg-white rounded-4 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=85"
+                alt="Lush green indoor plants in a bright home"
+                class="img-fluid rounded-3 object-fit-cover hero-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="plant-matchmaker">
+      <div class="section-heading text-center mb-4">
+        <p class="small text-success fw-semibold text-uppercase">
+          YOUR GREEN SIDEKICK
+        </p>
+        <h2>Plant Matchmaker</h2>
+        <p class="text-muted">
+          Tell us about your space and we'll suggest a plant to start with.
+        </p>
+      </div>
+      <div class="col-lg-10 mx-auto p-4 bg-light border rounded-4">
+        <form id="plantQuiz" class="row g-3">
+          <div class="col-md-4">
+            <label for="sunlight" class="form-label">Available sunlight</label><select id="sunlight" class="form-select"
+              required>
+              <option value="bright">Bright, indirect light</option>
+              <option value="low">Low light</option>
+              <option value="direct">Direct sunlight</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="care" class="form-label">Care level</label><select id="care" class="form-select" required>
+              <option value="easy">Easy / beginner</option>
+              <option value="moderate">I can give it attention</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="pets" class="form-label">Pets at home?</label><select id="pets" class="form-select" required>
+              <option value="yes">Yes, pet-friendly only</option>
+              <option value="no">No pets to consider</option>
+            </select>
+          </div>
+          <div class="col-12 text-center">
+            <button class="btn btn-success px-4" type="submit">
+              Find my match
+            </button>
+          </div>
+        </form>
+        <div id="quizResult" class="p-3 mt-4 bg-success-subtle text-success-emphasis text-center rounded-3"
+          aria-live="polite">
+          Your plant recommendation will appear here.
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="section-heading d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+        <div>
+          <p class="small text-success fw-semibold text-uppercase">
+            A LITTLE LEAF LOVE
+          </p>
+          <h2>Popular Houseplants</h2>
+        </div>
+        <a href="product.html" class="text-success fw-semibold">See our featured plant →</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=80"
+              alt="Monstera plant" class="w-100 object-fit-cover plant-image" />
+            <div class="p-3">
+              <h3 class="h5">Monstera Deliciosa</h3>
+              <p class="text-muted small">
+                Bold leaves · Bright indirect light
+              </p>
+              <a href="product.html" class="btn btn-outline-success btn-sm">View plant</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?auto=format&fit=crop&w=700&q=80"
+              alt="Snake plant in a pot" class="w-100 object-fit-cover plant-image" />
+            <div class="p-3">
+              <h3 class="h5">Snake Plant</h3>
+              <p class="text-muted small">Hardy · Low to bright light</p>
+              <a href="product.html" class="btn btn-outline-success btn-sm">Explore care</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=700&q=80"
+              alt="Pothos trailing houseplant" class="w-100 object-fit-cover plant-image" />
+            <div class="p-3">
+              <h3 class="h5">Golden Pothos</h3>
+              <p class="text-muted small">Trailing vines · Easy care</p>
+              <a href="product.html" class="btn btn-outline-success btn-sm">Explore care</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80"
+              alt="Small leafy houseplant" class="w-100 object-fit-cover plant-image" />
+            <div class="p-3">
+              <h3 class="h5">Peace Lily</h3>
+              <p class="text-muted small">Elegant blooms · Moderate care</p>
+              <a href="product.html" class="btn btn-outline-success btn-sm">Explore care</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="section-heading text-center mb-4">
+          <p class="small text-success fw-semibold text-uppercase">
+            GREEN IN EVERY CORNER
+          </p>
+          <h2>A home that grows with you</h2>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 g-3">
+          <div class="col">
+            <img class="w-100 object-fit-cover collage-image rounded-3"
+              src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85"
+              alt="Sunlight falling on leafy plants" />
+          </div>
+          <div class="col">
+            <img class="w-100 object-fit-cover collage-image rounded-3"
+              src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=700&q=85"
+              alt="Indoor plant collection" />
+          </div>
+          <div class="col">
+            <img class="w-100 object-fit-cover collage-image rounded-3"
+              src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=85"
+              alt="Large tropical leaves" />
+          </div>
+          <div class="col">
+            <img class="w-100 object-fit-cover collage-image rounded-3"
+              src="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?auto=format&fit=crop&w=700&q=85"
+              alt="Houseplants beside a window" />
+          </div>
+          <div class="col">
+            <img class="w-100 object-fit-cover collage-image rounded-3"
+              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85"
+              alt="Fresh green foliage" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="section-heading mb-4">
+        <p class="small text-success fw-semibold text-uppercase">
+          PLANTS WITH A PURPOSE
+        </p>
+        <h2>Curated Collections</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
+            <img class="card-img object-fit-cover collection-image"
+              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80"
+              alt="Easy-care houseplant" />
+            <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+              <h3>First-time plant parent</h3>
+              <p>Low-fuss favourites for new growers.</p>
+              <a href="product.html" class="btn btn-light btn-sm">Explore collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
+            <img class="card-img object-fit-cover collection-image"
+              src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80"
+              alt="Pet-aware plant collection" />
+            <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+              <h3>Pet-aware picks</h3>
+              <p>Start with plants chosen with pets in mind.</p>
+              <a href="product.html" class="btn btn-light btn-sm">Explore collection</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
+            <img class="card-img object-fit-cover collection-image"
+              src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80"
+              alt="Lush tropical houseplants" />
+            <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
+              <h3>Jungle corner</h3>
+              <p>Make a statement with lush tropical leaves.</p>
+              <a href="product.html" class="btn btn-light btn-sm">Explore collection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <p class="small text-success fw-semibold text-uppercase">
+              A LITTLE KNOW-HOW GOES A LONG WAY
+            </p>
+            <h2>Plant Care Guides</h2>
+            <p class="text-muted">
+              Watering, light, repotting and all the small things that help
+              your plant feel at home.
+            </p>
+            <a href="product.html" class="btn btn-success">Read Monstera care guide</a>
+          </div>
+          <div class="col-lg-5">
+            <img class="img-fluid rounded-4"
+              src="https://images.unsplash.com/photo-1616690248203-3b7c6d2c2c21?auto=format&fit=crop&w=900&q=80"
+              alt="Caring for a potted plant" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5 text-center">
+      <p class="small text-success fw-semibold text-uppercase">
+        OUR LITTLE GREEN WORLD
+      </p>
+      <h2>About Blooming Oasis</h2>
+      <p class="text-muted mx-auto col-lg-8">
+        We believe every home deserves a touch of nature. We make choosing and
+        caring for houseplants feel friendly, practical and joyful.
+      </p>
+      <a href="about.html" class="btn btn-outline-success">Meet our plant people</a>
+    </section>
+  </main>
+
+  <footer class="bg-success text-white">
+    <div class="container py-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6">
+          <a class="navbar-brand fw-bold text-white" href="index.html">Blooming Oasis</a>
+          <p class="small mb-0 mt-2">
+            Growing greener homes, one leaf at a time.
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end flex-wrap gap-3">
+          <a class="link-light text-decoration-none" href="index.html">Home</a>
+          <a class="link-light text-decoration-none" href="product.html">Shop</a>
+          <a class="link-light text-decoration-none" href="about.html">About</a>
+          <a class="link-light text-decoration-none" href="contact.html">Contact</a>
+          <a class="link-light text-decoration-none" href="https://www.rhs.org.uk/houseplants" target="_blank"
+            rel="noopener noreferrer">Plant resources ↗</a>
+        </div>
+      </div>
+      <hr />
+      <div class="small d-flex justify-content-between flex-wrap gap-2">
+        <span>© <span class="current-year"></span> Blooming Oasis</span><span>Live time: <span
+            class="live-clock"></span></span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.hero-image {
+  height: min(27rem, 75vw);
+}
+
+.product-main-image {
+  height: min(36rem, 80vw);
+}
+
+.plant-image,
+.collage-image {
+  height: 14rem;
+}
+
+.team-image {
+  height: 18rem;
+}
+
+.collection-image {
+  height: 16rem;
+}
+
+.chat-messages {
+  height: 16rem;
+}
