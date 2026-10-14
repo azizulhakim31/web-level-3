@@ -1,24 +1,29 @@
 .hero-image {
-  height: min(27rem, 75vw);
+  height: min(432px, 75vw);
 }
 
 .product-main-image {
-  height: min(36rem, 80vw);
+  height: min(576px, 80vw);
 }
 
-.plant-image,
 .collage-image {
-  height: 14rem;
+  height: 224px;
+}
+
+.plant-image {
+  width: 100%;
+  height: 224px;
+  object-fit: contain;
 }
 
 .team-image {
-  height: 18rem;
+  height: 288px;
 }
 
 .collection-image {
-  height: 16rem;
+  height: 256px;
 }
 
 .chat-messages {
-  height: 16rem;
+  height: 256px;
 }
