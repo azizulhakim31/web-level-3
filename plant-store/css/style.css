@@ -1,29 +1,153 @@
+:root {
+    --brand-green: #2e7d4d;
+    --brand-green-dark: #1d5f39;
+    --brand-green-soft: #edf6ee;
+    --brand-ink: #1c2b21;
+    --brand-muted: #5d6d60;
+    --card-shadow: 0 0.75rem 1.5rem rgba(22, 35, 27, 0.08);
+}
+
+body {
+    background: #f6f8f5;
+    color: var(--brand-ink);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    transform: translateY(-1px);
+}
+
+main section {
+    scroll-margin-top: 5rem;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(17, 26, 21, 0.06);
+}
+
+.navbar-brand {
+    letter-spacing: -0.03em;
+}
+
+.navbar .nav-link {
+    color: var(--brand-ink);
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--brand-green-dark);
+}
+
+.btn {
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 0.72rem 1.35rem;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, var(--brand-green) 0%, var(--brand-green-dark) 100%);
+    border-color: var(--brand-green);
+    box-shadow: 0 0.5rem 1rem rgba(46, 125, 77, 0.2);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background: linear-gradient(135deg, var(--brand-green-dark) 0%, var(--brand-green) 100%);
+    border-color: var(--brand-green-dark);
+}
+
+.card,
+.bg-light,
+.form-control,
+.form-select,
+.list-group-item {
+    border-radius: 1.25rem;
+}
+
+.card {
+    border: 1px solid rgba(18, 33, 24, 0.05);
+    box-shadow: var(--card-shadow);
+}
+
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2,
+.display-4,
+.display-5,
+.display-6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    letter-spacing: -0.03em;
+}
+
 .hero-image {
-  height: min(432px, 75vw);
+    height: min(432px, 75vw);
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: var(--card-shadow);
 }
 
 .product-main-image {
-  height: min(576px, 80vw);
+    height: min(576px, 80vw);
+    object-fit: cover;
+    width: 100%;
 }
 
-.collage-image {
-  height: 224px;
-}
-
+.collage-image,
 .plant-image {
-  width: 100%;
-  height: 224px;
-  object-fit: contain;
+    height: 224px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .team-image {
-  height: 288px;
+    height: 288px;
+    width: 100%;
+    object-fit: cover;
 }
 
-.collection-image {
-  height: 256px;
-}
-
+.collection-image,
 .chat-messages {
-  height: 256px;
+    height: 256px;
+    width: 100%;
+}
+
+.alert,
+.list-group-item,
+.form-control,
+.form-select {
+    border-color: rgba(17, 26, 21, 0.08);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgba(46, 125, 77, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 77, 0.15);
+}
+
+@media (max-width: 991.98px) {
+    .navbar .nav-link {
+        padding: 0.7rem 0.25rem;
+    }
 }
