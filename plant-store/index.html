@@ -29,16 +29,16 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link active py-2 px-1 px-lg-3" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="product.html">Shop Monstera</a>
+              <a class="nav-link py-2 px-1 px-lg-3" href="product.html">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link py-2 px-1 px-lg-3" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link py-2 px-1 px-lg-3" href="contact.html">Contact</a>
             </li>
             <li class="nav-item ms-lg-3">
               <a class="btn btn-success btn-sm px-3" href="product.html">Explore plants <span
@@ -68,16 +68,17 @@
           </div>
           <div class="col-lg-6">
             <div class="p-3 bg-white rounded-4 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=85"
-                alt="Lush green indoor plants in a bright home"
-                class="img-fluid rounded-3 object-fit-cover hero-image" />
+              <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+                <img src="images/home-hero.jpg"
+                  alt="Lush green indoor plants in a bright home" class="object-fit-cover" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="container py-5" id="plant-matchmaker">
-      <div class="section-heading text-center mb-4">
+      <div class="text-center mb-4">
         <p class="small text-success fw-semibold text-uppercase">YOUR GREEN SIDEKICK</p>
         <h2>Plant Matchmaker</h2>
         <p class="text-muted">Tell us about your space and we'll suggest a plant to start with.</p>
@@ -115,7 +116,7 @@
       </div>
     </section>
     <section class="container pb-5">
-      <div class="section-heading d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+      <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
         <div>
           <p class="small text-success fw-semibold text-uppercase">A LITTLE LEAF LOVE</p>
           <h2>Popular Houseplants</h2>
@@ -125,8 +126,10 @@
       <div class="row g-4">
         <div class="col-sm-6 col-lg-3">
           <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=80"
-              alt="Monstera plant" class="w-100 object-fit-cover plant-image" />
+            <div class="ratio ratio-4x3">
+              <img src="images/monstera.jpg"
+                alt="Monstera plant" class="object-fit-cover" />
+            </div>
             <div class="p-3">
               <h3 class="h5">Monstera Deliciosa</h3>
               <p class="text-muted small">Bold leaves · Bright indirect light</p>
@@ -136,9 +139,11 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1611211232932-da3113c5b960?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c25ha2UlMjBwbGFudHxlbnwwfHwwfHx8MA%3D%3D?auto=format&fit=crop&w=700&q=80"
-              alt="Snake plant in a pot" class="w-100 object-fit-cover plant-image" />
+            <div class="ratio ratio-4x3">
+              <img
+                src="images/snake-plant.jpg"
+                alt="Snake plant in a pot" class="object-fit-cover" />
+            </div>
             <div class="p-3">
               <h3 class="h5">Snake Plant</h3>
               <p class="text-muted small">Hardy · Low to bright light</p>
@@ -148,8 +153,10 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=700&q=80"
-              alt="Pothos trailing houseplant" class="w-100 object-fit-cover plant-image" />
+            <div class="ratio ratio-4x3">
+              <img src="images/golden-pothos.jpg"
+                alt="Pothos trailing houseplant" class="object-fit-cover" />
+            </div>
             <div class="p-3">
               <h3 class="h5">Golden Pothos</h3>
               <p class="text-muted small">Trailing vines · Easy care</p>
@@ -159,8 +166,10 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80"
-              alt="Small leafy houseplant" class="w-100 object-fit-cover plant-image" />
+            <div class="ratio ratio-4x3">
+              <img src="images/peace-lily.jpg"
+                alt="Small leafy houseplant" class="object-fit-cover" />
+            </div>
             <div class="p-3">
               <h3 class="h5">Peace Lily</h3>
               <p class="text-muted small">Elegant blooms · Moderate care</p>
@@ -172,50 +181,62 @@
     </section>
     <section class="bg-light py-5">
       <div class="container">
-        <div class="section-heading text-center mb-4">
+        <div class="text-center mb-4">
           <p class="small text-success fw-semibold text-uppercase">GREEN IN EVERY CORNER</p>
           <h2>A home that grows with you</h2>
         </div>
         <div class="row row-cols-2 row-cols-md-3 g-3">
           <div class="col">
-            <img class="w-100 object-fit-cover collage-image rounded-3"
-              src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85"
-              alt="Sunlight falling on leafy plants" />
+            <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+              <img class="object-fit-cover"
+                src="images/leafy-sunlight.jpg"
+                alt="Sunlight falling on leafy plants" />
+            </div>
           </div>
           <div class="col">
-            <img class="w-100 object-fit-cover collage-image rounded-3"
-              src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=700&q=85"
-              alt="Indoor plant collection" />
+            <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+              <img class="object-fit-cover"
+                src="images/indoor-collection.jpg"
+                alt="Indoor plant collection" />
+            </div>
           </div>
           <div class="col">
-            <img class="w-100 object-fit-cover collage-image rounded-3"
-              src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=700&q=85"
-              alt="Large tropical leaves" />
+            <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+              <img class="object-fit-cover"
+                src="images/monstera.jpg"
+                alt="Large tropical leaves" />
+            </div>
           </div>
           <div class="col">
-            <img class="w-100 object-fit-cover collage-image rounded-3"
-              src="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?auto=format&fit=crop&w=700&q=85"
-              alt="Houseplants beside a window" />
+            <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+              <img class="object-fit-cover"
+                src="images/window-plants.jpg"
+                alt="Houseplants beside a window" />
+            </div>
           </div>
           <div class="col">
-            <img class="w-100 object-fit-cover collage-image rounded-3"
-              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=85"
-              alt="Fresh green foliage" />
+            <div class="ratio ratio-4x3 rounded-3 overflow-hidden">
+              <img class="object-fit-cover"
+                src="images/green-foliage.jpg"
+                alt="Fresh green foliage" />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="container py-5">
-      <div class="section-heading mb-4">
+      <div class="mb-4">
         <p class="small text-success fw-semibold text-uppercase">PLANTS WITH A PURPOSE</p>
         <h2>Curated Collections</h2>
       </div>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
-            <img class="card-img object-fit-cover collection-image"
-              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80"
-              alt="Easy-care houseplant" />
+            <div class="ratio ratio-4x3">
+              <img class="card-img object-fit-cover"
+                src="images/peace-lily.jpg"
+                alt="Easy-care houseplant" />
+            </div>
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
               <h3>First-time plant parent</h3>
               <p>Low-fuss favourites for new growers.</p>
@@ -225,9 +246,11 @@
         </div>
         <div class="col-md-4">
           <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
-            <img class="card-img object-fit-cover collection-image"
-              src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80"
-              alt="Pet-aware plant collection" />
+            <div class="ratio ratio-4x3">
+              <img class="card-img object-fit-cover"
+                src="images/leafy-sunlight.jpg"
+                alt="Pet-aware plant collection" />
+            </div>
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
               <h3>Pet-aware picks</h3>
               <p>Start with plants chosen with pets in mind.</p>
@@ -237,9 +260,11 @@
         </div>
         <div class="col-md-4">
           <div class="card text-bg-dark border-0 rounded-4 overflow-hidden">
-            <img class="card-img object-fit-cover collection-image"
-              src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80"
-              alt="Lush tropical houseplants" />
+            <div class="ratio ratio-4x3">
+              <img class="card-img object-fit-cover"
+                src="images/home-hero.jpg"
+                alt="Lush tropical houseplants" />
+            </div>
             <div class="card-img-overlay d-flex flex-column justify-content-end bg-dark bg-opacity-50">
               <h3>Jungle corner</h3>
               <p>Make a statement with lush tropical leaves.</p>
@@ -263,7 +288,7 @@
           <div class="col-lg-5">
             <div class="bg-secondary-subtle p-3 d-flex justify-content-center rounded-4">
               <img class="img-fluid rounded-4"
-                src="https://pcfb.gumlet.io/images/articles/monstera-growing.jpg?w=640&h=426&mode=crop&crop=smart&s=46418c719a487c693e8f9c45e11e1d7b"
+                src="images/plant-care-guide.jpg"
                 alt="Caring for a potted plant" />
             </div>
           </div>
