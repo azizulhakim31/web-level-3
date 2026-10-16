@@ -1,0 +1,80 @@
+:root {
+    --bs-body-color: #29352d;
+    --bs-success-rgb: 36, 107, 69;
+    --bs-link-color-rgb: 36, 107, 69;
+    --bs-link-hover-color-rgb: 25, 75, 50;
+    --bs-success-bg-subtle: #edf6ee;
+    --bs-success-text-emphasis: #194b32;
+}
+
+.navbar {
+    --bs-navbar-color: var(--bs-success-text-emphasis);
+    --bs-navbar-hover-color: rgb(var(--bs-success-rgb));
+    --bs-navbar-active-color: rgb(var(--bs-success-rgb));
+}
+
+.hero {
+    min-height: 490px;
+    background:
+        linear-gradient(90deg, #102d1fe8 0%, #173c25b8 55%, #173c2566 100%),
+        url("../images/farm-field.jpg") center/cover;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-eyebrow {
+    letter-spacing: 0.08em;
+}
+
+.hero .lead {
+    color: #ffffffe0;
+}
+
+.section-intro {
+    max-width: 720px;
+}
+
+.section-kicker {
+    letter-spacing: 0.13em;
+}
+
+.field-card {
+    border-top: 3px solid #d5e8d7;
+    background: linear-gradient(145deg, #fff, #f8fbf7);
+}
+
+.field-number {
+    letter-spacing: 0.12em;
+}
+
+.card {
+    border: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px #193d281a;
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: rgb(var(--bs-success-rgb));
+    box-shadow: 0 0 0 0.2rem #246b4520;
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 430px;
+    }
+
+}
