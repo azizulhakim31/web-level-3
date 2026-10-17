@@ -17,23 +17,26 @@ function updateFooterYear() {
 
 function updateLiveClock() {
   const now = new Date();
-  const date = $("#live-date");
-  const time = $("#live-time");
-  if (date) {
-    date.textContent = now.toLocaleDateString(undefined, {
+  const dateText = now.toLocaleDateString(undefined, {
       weekday: "long",
       year: "numeric",
       month: "long",
       day: "numeric"
-    });
-  }
-  if (time) {
-    time.textContent = now.toLocaleTimeString(undefined, {
+  });
+  const timeText = now.toLocaleTimeString(undefined, {
       hour: "2-digit",
       minute: "2-digit",
       second: "2-digit"
-    });
-  }
+  });
+
+  $all(".live-date").forEach((date) => {
+    date.textContent = dateText;
+    date.dateTime = now.toISOString();
+  });
+  $all(".live-time").forEach((time) => {
+    time.textContent = timeText;
+    time.dateTime = now.toISOString();
+  });
 }
 
 function markCurrentNavigationLink() {
@@ -175,21 +178,3 @@ if (document.readyState === "loading") {
 } else {
   initializePortfolio();
 }
-
-function focusFirstField(form) {
-  const field = $("input, textarea, select", form);
-  if (field) field.focus();
-}
-
-function clearFormFeedback(form) {
-  $all(".is-valid, .is-invalid", form).forEach((field) => {
-    field.classList.remove("is-valid", "is-invalid");
-  });
-}
-
-window.portfolioHelpers = {
-  updateLiveClock: updateLiveClock,
-  updateFooterYear: updateFooterYear,
-  focusFirstField: focusFirstField,
-  clearFormFeedback: clearFormFeedback
-};
