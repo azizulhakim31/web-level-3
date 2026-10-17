@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Contact the Bangladesh Liberation Archive to ask a question or propose a historical contribution.">
+  <meta name="keywords" content="Bangladesh history archive contact, contribute historical documents, 1971 photographs">
+  <title>Contribute | Bangladesh Liberation Archive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/bangladesh-flag.svg" type="image/x-icon">
+
+</head>
+
+<body>
+  <header class="archive-header sticky-top">
+    <div class="archive-topbar">
+      <span>Remember • Preserve • Share</span>
+      <span class="archive-topbar-time"><span aria-hidden="true">|</span>
+        <time data-live-clock aria-label="Live date and time">Loading…</time>
+      </span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark archive-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-mark">BA</span> Liberation Archive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="documents.html">Documents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="interviews.html">Interviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contribute</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </header>
+  <header class="page-hero">
+    <div class="container py-5">
+      <p class="section-kicker">Help preserve history</p>
+      <h1 class="display-4 fw-bold">Share a story or ask a question</h1>
+      <p class="lead mb-0">Have a document, photograph or family memory? Tell the archive team about it.</p>
+    </div>
+  </header>
+  <main class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="form-panel">
+          <h2 class="h3 mb-2">Contact and contribution form</h2>
+          <p class="text-secondary">This form checks required fields in your browser. Submissions are not sent or
+            stored.</p>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Full name *</label>
+                <input id="name" name="name" class="form-control" required minlength="2" autocomplete="name">
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email address *</label>
+                <input id="email" name="email" type="email" class="form-control" required autocomplete="email">
+                <div class="invalid-feedback">Enter a valid email address.</div>
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject *</label>
+                <select id="subject" name="subject" class="form-select" required>
+                  <option value="">Choose a subject</option>
+                  <option>General inquiry</option>
+                  <option>Document contribution</option>
+                  <option>Photograph contribution</option>
+                  <option>Interview or oral history</option>
+                  <option>Correction or feedback</option>
+                </select>
+                <div class="invalid-feedback">Please choose a subject.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required minlength="10"
+                  placeholder="Describe your question or the material you would like to share.">
+</textarea>
+                <div class="invalid-feedback">Please write at least 10 characters.</div>
+              </div>
+              <div class="col-12">
+                <label for="attachment" class="form-label">Attach a document or photograph (optional)</label>
+                <input id="attachment" name="attachment" type="file" class="form-control"
+                  accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx">
+                <div class="form-text">File limit: 10 MB. Do not upload sensitive or private material without
+                  permission.</div>
+              </div>
+              <div class="col-12 form-check ms-2"><input id="permission" class="form-check-input" type="checkbox"
+                  required>
+                <label for="permission" class="form-check-label">I have the right to share this material, or I am asking
+                  about it before sharing.</label>
+                <div class="invalid-feedback">Please confirm before continuing.</div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-archive btn-lg w-100" type="submit">Review submission</button>
+              </div>
+            </div>
+          </form>
+          <div id="formMessage" class="alert alert-success mt-3 d-none" role="status">
+          </div>
+        </div>
+      </div>
+      <aside class="col-lg-5">
+        <div class="contact-side">
+          <p class="section-kicker">Get in touch</p>
+          <h2 class="h3">Archive administration</h2>
+          <p class="text-secondary">Replace the placeholder contact details below with verified information before
+            publishing this site.</p>
+          <div class="contact-detail">
+            <span class="contact-icon">✉</span>
+            <div>
+              <strong>Email</strong>
+              <br>
+              <a href="mailto:archive@example.org">archive@example.org</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-icon">⌖</span>
+            <div>
+              <strong>Location</strong>
+              <br>Dhaka, Bangladesh
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-warning mt-4">
+          <strong>Before submitting:</strong> confirm ownership, consent, date and source details. Attachments are not
+          uploaded to a server.
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>© 2026 Bangladesh Liberation Archive</span>
+      <span class="footer-clock">Live time: <time data-live-clock>Loading…</time></span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
