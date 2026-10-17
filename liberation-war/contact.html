@@ -15,53 +15,54 @@
 </head>
 
 <body>
-  <header class="archive-header sticky-top">
-    <div class="archive-topbar">
+  <header class="sticky-top shadow-sm">
+    <div
+      class="d-flex flex-wrap justify-content-center align-items-center gap-1 px-2 py-1 bg-success opacity-75 text-white small text-center">
       <span>Remember • Preserve • Share</span>
-      <span class="archive-topbar-time"><span aria-hidden="true">|</span>
+      <span class="d-inline-flex align-items-center gap-2"><span aria-hidden="true">|</span>
         <time data-live-clock aria-label="Live date and time">Loading…</time>
       </span>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark archive-nav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">
-        <span class="brand-mark">BA</span> Liberation Archive</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="documents.html">Documents</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="interviews.html">Interviews</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contribute</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span class="badge rounded-circle bg-danger me-2">BA</span> Liberation Archive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html">Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interviews.html">Interviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contribute</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
     </nav>
   </header>
-  <header class="page-hero">
+  <header class="bg-success-subtle border-bottom">
     <div class="container py-5">
-      <p class="section-kicker">Help preserve history</p>
+      <p class="small fw-bold text-uppercase section-kicker">Help preserve history</p>
       <h1 class="display-4 fw-bold">Share a story or ask a question</h1>
       <p class="lead mb-0">Have a document, photograph or family memory? Tell the archive team about it.</p>
     </div>
   </header>
   <main class="container py-5">
-    <div class="row g-5">
+    <div class="row g-4">
       <div class="col-lg-7">
-        <div class="form-panel">
+        <div class="card p-4 p-md-5">
           <h2 class="h3 mb-2">Contact and contribution form</h2>
           <p class="text-secondary">This form checks required fields in your browser. Submissions are not sent or
             stored.</p>
@@ -110,7 +111,7 @@
                 <div class="invalid-feedback">Please confirm before continuing.</div>
               </div>
               <div class="col-12">
-                <button class="btn btn-archive btn-lg w-100" type="submit">Review submission</button>
+                <button class="btn btn-success btn-lg w-100" type="submit">Review submission</button>
               </div>
             </div>
           </form>
@@ -119,21 +120,21 @@
         </div>
       </div>
       <aside class="col-lg-5">
-        <div class="contact-side">
-          <p class="section-kicker">Get in touch</p>
+        <div class="card p-4 p-md-5">
+          <p class="small fw-bold text-uppercase section-kicker">Get in touch</p>
           <h2 class="h3">Archive administration</h2>
           <p class="text-secondary">Replace the placeholder contact details below with verified information before
             publishing this site.</p>
-          <div class="contact-detail">
-            <span class="contact-icon">✉</span>
+          <div class="d-flex align-items-start gap-3 mt-4">
+            <span class="badge rounded-3 bg-success-subtle text-success fs-5">✉</span>
             <div>
               <strong>Email</strong>
               <br>
               <a href="mailto:archive@example.org">archive@example.org</a>
             </div>
           </div>
-          <div class="contact-detail">
-            <span class="contact-icon">⌖</span>
+          <div class="d-flex align-items-start gap-3 mt-4">
+            <span class="badge rounded-3 bg-success-subtle text-success fs-5">⌖</span>
             <div>
               <strong>Location</strong>
               <br>Dhaka, Bangladesh
@@ -147,10 +148,10 @@
       </aside>
     </div>
   </main>
-  <footer class="site-footer">
+  <footer class="bg-dark text-light">
     <div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-2">
       <span>© 2026 Bangladesh Liberation Archive</span>
-      <span class="footer-clock">Live time: <time data-live-clock>Loading…</time></span>
+      <span class="small text-white-50">Live time: <time data-live-clock>Loading…</time></span>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
